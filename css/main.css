@@ -1,0 +1,160 @@
+/*public header*/
+.body-bg{
+    background-image: url("../img/header-bg.png");
+    background-repeat: repeat-x;
+}
+.header div div{
+    margin: 20px 0;
+}
+.top-p-font{
+    font-family: 华文行楷;
+    color: #040000;
+}
+.top-p-font p{
+    margin-left: 340px;
+}
+/*index-body*/
+.index-body{
+    margin: 20px auto;
+}
+.login-left{
+    border: 1px solid #898989;
+    margin-left: 100px;
+}
+.login-left img{
+    display: block;
+    background-color: #93AEEE;
+    margin: 5px 5px;
+}
+.signup{
+    border: 1px solid #898989;
+    padding: 70px;
+    margin-left: 150px;
+}
+.signup a{
+    display: block;
+    width: 70px;height: 30px;
+    background-color: #00CCFF;
+    color: #040000;
+    border-radius: 1px;
+    border: 1px solid #898989;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 52px;
+}
+.login-right label{
+    font-family: "微软雅黑 Light";
+    line-height: 30px;margin-right: 10px;
+}
+.wid-input{
+    width: 200px;
+    margin-left: 2px;
+}
+.input1{
+    margin-left: 50px;
+}
+/*login in*/
+.nav-login{
+    width: 100%;
+}
+.nav-login ul{
+    width: 100%;
+}
+.nav-login>ul>li{
+    font-size: 16px;
+    line-height: 50px;
+    margin: 5px 15px;
+}
+.nav-login>ul>li>a{
+    border: none;
+    display: block;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+.nav-login>.nav-tabs>li.active>a{
+    border: none;
+    background-color: transparent;
+    color: #00CCFF;
+}
+/*教务公告*/
+.neirong{
+    text-align: center;
+    text-indent: 2em;
+    margin-top: -20px;
+}
+.gonggao-p{
+    width: 900px;
+    margin:0 auto;
+    padding: 40px 40px;
+}
+.neirong p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 20px;
+}
+.neirong p:nth-child(1){
+    margin-top: 0;
+}
+.small-gonggao{
+    line-height: 50px;
+}
+.tishi{
+    margin: 30px;
+}
+/*查询课表*/
+.kebiao-top td{
+    text-align: right;
+    line-height: 45px;
+}
+.kebiao-top table select{
+    width: 120px;
+    text-align: center;
+}
+.kebiao-top table{
+    margin: 0 auto;
+}
+.kebiao-top{
+    margin: 15px auto;
+    width: 1100px;
+    height: 90px;
+}
+.kebiao-body{
+    width: 1300px;
+    height: 700px;
+    margin: 30px auto;
+}
+.blacktab{
+    position: relative;
+    top: 47px;
+}
+.blacktab tr:nth-child(1) td{
+    width: 12.5%;
+}
+.blacktab tr {
+    height: 55px;
+}
+/*修改密码*/
+.miam{
+    width: 80%;
+    height: 315px;
+}
+.changemima{
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+.changemima td{
+    line-height: 30px;
+}
+.changemima tr{
+    height: 45px;
+}
+.changemima input{
+    height: 25px;
+    padding: 0 5px;
+}
+.changemima button{
+    padding: 0 15px;
+}
+

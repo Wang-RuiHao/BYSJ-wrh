@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>教务管理系统（前端开发中）</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body-bg">
+<!--公共头部-->
+<div class="header">
+    <div class="width">
+        <div class="clearfix">
+            <div class="clearfix">
+                <img src="img/logo_school.png" alt="陕西邮电职业技术学院" class="fl">
+                <img src="img/logo_jw.png" alt="教务系统" class="ml50">
+            </div>
+            <div class="top-p-font fr">
+                <p class="f20 lh200">欢迎您;XXX同学|<a href="JiaoWu.html">退出</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--菜单栏-->
+<div class="nav-login clearfix">
+    <ul class="nav-tabs clearfix">
+        <li class="active"><a href="#gonggao">教务公告</a></li>
+        <li><a href="#kebiao">查询课表</a></li>
+        <li><a href="#chengji">成绩查询</a></li>
+        <li><a href="#xuanke">网上选课</a></li>
+        <li><a href="#info">个人信息</a></li>
+        <li><a href="#changemima">修改密码</a></li>
+    </ul>
+</div>
+    <div class="tab-content neirong ">
+        <div id="gonggao" class="tab-pane fade in active">
+            <div class="gonggao-p yinying">
+                <h1 class="f20">计算机系举办2018届毕业生毕业论文和企业实习指导讲座</h1>
+                <small class="small-gonggao">发稿时间：10-27      来源：陕西邮电职业技术学院   阅读量：28</small>
+                <p>为了提高计算机系毕业生论文写作质量，保证毕业生高效优质地完成论文写作，10月25日，
+                    由计算机系主办的2018届毕业生毕业论文和企业实习指导讲座在动漫实训室举行。本次指
+                    导讲座由梁静老师主讲，2015级多媒体技术和2013级动漫制作技术专业的全体同学参加本
+                    次讲座。</p>
+                <p>梁静老师首先解读了毕业论文写作的基本要求，讲解了毕业论文的写作规范，同时从论文
+                    选题、摘要、关键词、正文、参考文献等五个方面分别讲述了毕业论文的组成部分及写作
+                    规范与技巧，尤其是如何体现创新性要注意的关键问题。最后，梁老师还针对如何查阅资
+                    料的问题给出了实用性的指导，向同学们推荐了多种可供查找资料的数据库和网站，这些
+                    都为对论文写作感到迷惘的同学指明了第一步要走的方向。</p>
+                <p>同学们听讲并认真做了详细记录，讲座结束后由李奇老师给同学们补充讲解了企业实习期间
+                    实习日志的填写要求，同学们还就填写细节与李老师进行交流。通过两位老师的讲解，不
+                    仅使同学们深入了解了毕业论文和实习日志的写作要求，而且拓宽了同学们的毕业论文设
+                    计思路，有助于计算机系毕业生毕业论文质量的提高。</p>
+                <h4 class="tr f16 mt30">计算机系<br>2017-10-27</h4>
+            </div>
+        </div>
+        <div id="kebiao" class="tab-pane fade">
+            <div class="kebiao-top yinying">
+                <table class="">
+                    <tr>
+                        <td>学年：</td>
+                        <td>
+                            <select name="xuenian" id="xuenian">
+                                <option value ="17-18">2017-2018</option>
+                                <option value ="16-17">2016-2017</option>
+                            </select>
+                        </td>
+                        <td>学期：</td>
+                        <td>
+                            <select name="xueqi" id="xueqi">
+                                <option value ="1">1</option>
+                                <option value ="2">2</option>
+                            </select>
+                        </td>
+                        <td>年级：</td>
+                        <td>
+                            <select name="nianji" id="nianji">
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>学院名称：</td>
+                        <td>
+                            <select name="xibie" id="xibie">
+                                <option value="jisuanji">计算机系</option>
+                                <option value="guanlixi">管理系</option>
+                                <option value="tongxinxi">通信息</option>
+                                <option value="jichubu">基础部</option>
+                            </select>
+                        </td>
+                        <td>专业：</td>
+                        <td>
+                            <select name="zhuanye" id="zhuanye">
+                                    <option value="0201">通信技术</option>
+                                    <option value="0202">移动通信技术</option>
+                                    <option value="0205">电子信息工程技术</option>
+                                    <option value="0206">通信技术</option>
+                                    <option value="0211">工程造价</option>
+                                    <option value="0212">通信工程设计与管理</option>
+                                    <option value="0214">通信系统运行管理</option>
+                                    <option value="0215">通信工程设计与监理</option>
+                                    <option value="0301">计算机通信</option>
+                                    <option value="0302">软件技术</option>
+                                    <option value="0305">计算机通信</option>
+                                    <option value="0308">计算机多媒体技术</option>
+                                    <option value="0310">动漫设计与制作</option>
+                                    <option value="0312">动漫制作技术</option>
+                                    <option value="0314">数字媒体应用技术</option>
+                                    <option value="0315">信息安全与管理</option>
+                                    <option value="0316">移动互联应用技术</option>
+                                    <option value="0401">市场营销</option>
+                                    <option value="0402">营销与策划</option>
+                                    <option value="0403">电子商务</option>
+                                    <option value="0404">物流管理</option>
+                                    <option value="0408">金融管理与实务</option>
+                                    <option value="0409">连锁经营管理</option>
+                                    <option value="0410">会计电算化</option>
+                                    <option value="0411">会计</option>
+                                    <option value="0412">财务管理</option>
+                                    <option value="0414">金融管理</option>
+                                    <option value="0415">会计</option>
+                                    <option value="0417">电子商务</option>
+                            </select>
+                        </td>
+                        <td>班级：</td>
+                        <td>
+                            <select name="class" id="class">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="kebiao-body yinying">
+                <table id="Table6" class="blacktab" border="1" align="center">
+                    <tbody>
+                    <tr>
+                        <td colspan="2" rowspan="1">时间</td><td >星期一</td><td >星期二</td><td >星期三</td><td >星期四</td><td >星期五</td><td >星期六</td><td >星期日</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">上午</td><td>第一节</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>第二节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td>第三节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td>第四节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">下午</td><td>第五节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td>第六节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td>第七节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td>第八节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">晚上</td><td>第九节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    <tr>
+                        <td>第十节</td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td><td ></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="chengji" class="tab-pane fade">
+            <p>1515</p>
+        </div>
+        <div id="xuanke" class="tab-pane fade">
+            <p>1515</p>
+        </div>
+        <div id="info" class="tab-pane fade">
+            <p>1515</p>
+        </div>
+        <div id="changemima" class="tab-pane fade">
+            <div class="miam yinying">
+                <table class="changemima">
+                    <tr>
+                        <td>用户名：</td><td>XXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>旧密码：</td><td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>新密码：</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td>确认密码：</td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td><button>提交</button></td>
+                        <td><button>重置</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+<div class="tishi">
+    <p class="act"><b>您正在访问</b>: <span>教务系统</span></p>
+    <p class="prev"><b>刚才访问的是</b>: <span>无</span></p>
+</div>
+<script>
+    $(document).ready(function(){
+        $(".nav-tabs a").click(function(){
+            $(this).tab('show');
+        });
+        $('.nav-tabs a').on('shown.bs.tab', function(event){
+            var x = $(event.target).text();         // active tab
+            var y = $(event.relatedTarget).text();  // previous tab
+            $(".act span").text(x);
+            $(".prev span").text(y);
+        });
+    });
+</script>
+</body>
+</html>
